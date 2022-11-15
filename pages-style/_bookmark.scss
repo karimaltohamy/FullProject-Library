@@ -169,30 +169,32 @@ $blue-color: #284AC2;
     position: fixed;
     left: 0;
     z-index: 9999;
+    opacity: 0;
     top: -100%;
     width: 100%;
     height: 100%;
-    background-color: $blue-color;
-    padding: 2rem 1.87rem;
+    background-color: #284ac2f0;
+    padding: 0.5rem 1.87rem;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     &.open {
         top: 0;
+        opacity: 1;
     }
 
     .head {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 3.75rem;
+        margin-bottom: 2.75rem;
 
         .mobil-logo {
             width: 90px;
         }
 
         .close-menu-mobil {
-            width: 20px;
+            width: 18px;
             cursor: pointer;
         }
     }
@@ -202,12 +204,13 @@ $blue-color: #284AC2;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        height: 85%;
+        height: 85% !important;
+        padding: 0;
 
         &-item {
             font-size: 1.57rem;
-            padding: 20px 0;
-            width: 100%;
+            padding: 5px 0 !important;
+            width: 80%;
             text-align: center;
             cursor: pointer;
 
@@ -215,32 +218,37 @@ $blue-color: #284AC2;
                 color: $bg-color;
                 text-transform: uppercase;
                 font-weight: 400;
-                font-size: 23px;
+                font-size: 17px;
+            }
 
-                .menu-lang {
-                    background-color: white;
-                    color: $blue-color;
-                    padding: 10px;
-                    border-radius: 10px;
-                    width: 40%;
-                    margin: auto;
-                    transition: all 3s;
-                    display: none;
-                    
-                    &.open-lang {
-                        display: block;
-                    }
-    
-                    .lang-item {
-                        font-size: 17px;
-                        font-weight: bold;
-                    }
+            .menu-lang {
+                background-color: white;
+                color: $blue-color;
+                padding: 10px;
+                border-radius: 10px;
+                width: 40%;
+                margin: auto;
+                transition: all 3s;
+                display: none;
+                
+                &.open-lang {
+                    display: block;
+                }
+
+                .lang-item {
+                    font-size: 17px;
+                    font-weight: bold;
                 }
             }
         }
 
         &-item:not(:last-child) {
-            border-top: 1px solid var(--text-gray);
+            border-top: 1px solid white !important;
+        }
+
+        &-item:last-child {
+            border: 1px solid white !important;
+            border-radius: 15px;
         }
     }
 
@@ -507,7 +515,7 @@ $blue-color: #284AC2;
 
 @media(max-width: 650px) {
     .head-bookmark-app {
-        height: 90px;
+        height: 60px;
 
         h2 {
             font-size: 17px;
@@ -523,9 +531,16 @@ $blue-color: #284AC2;
     }
 
     .box-mark {
+        gap: 10px;
         .box {
-            padding: 13px 20px !important;
-            height: 150px !important;
+            padding: 7px 15px !important;
+            height: 105px !important;
+
+            .img {
+                img {
+                    height: 95% !important;
+                }
+            }
 
             .info {
                 .head {
@@ -545,11 +560,11 @@ $blue-color: #284AC2;
                     .mark {
                         img {
                             &:first-child {
-                                width: 14px !important;
+                                width: 13px !important;
                             }
 
                             &:last-child {
-                                width: 19px !important;
+                                width: 18px !important;
                             }
                         }
                     }
@@ -567,19 +582,18 @@ $blue-color: #284AC2;
 @media(max-width: 430px) {
     .box-mark {
         .box {
-            padding: 13px 15px !important;
-            height: 150px !important;
-
+            padding: 7px 10px !important;
+            gap: 15px !important;
             .info {
                 .head {
                     .name-book {
                         p {
-                            font-size: 14px !important;
+                            font-size: 13px !important;
                             font-weight: 600;                        
                         }
 
                         span {
-                            font-size: 14px;
+                            font-size: 13px;
                             transform: translateY(-5px);
                             display: block;
                         }
@@ -603,21 +617,21 @@ $blue-color: #284AC2;
 
                 .num-page {
                     margin-top: 0px !important;
-                    font-size: 13px;
+                    font-size: 12px;
+                    transform: translateY(-5px);
                 }
             }
         }
     }
 }
 
-@media(max-width: 390px) {
+@media(max-width: 370px) {
     .box-mark {
         .box {
             .info {
                 .head {
                     .mark {
                         flex-direction: column;    
-
                     }
                 }
             }

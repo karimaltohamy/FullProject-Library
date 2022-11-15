@@ -340,11 +340,23 @@ $blue-color: #284AC2;
         justify-content: space-between;
         padding: 15px 20px;
         background-color: #284AC2;
-        height: 120px;
+        height: 60px;
+
+        a:first-child {
+            img {
+                height: 16px;
+            }
+        }
+
+        a:last-child {
+            img {
+                height: 14px;
+            }
+        }
 
         p {
             color: #FFF;
-            font-size: 20px;
+            font-size: 17px;
         }
     }
 
@@ -362,6 +374,7 @@ $blue-color: #284AC2;
                 width: 100%;
                 height: auto;
                 border: none;
+
                 
                 .info-name-user {
                     display: flex;
@@ -433,7 +446,29 @@ $blue-color: #284AC2;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
+
+    .content-profile-1 {
+        .box-container {
+            .box-user-info {
+                padding: 15px 20px !important;
+
+                .info-name-user {
+                    .img {
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+
+                    
+                }
+
+                
+            }
+        }
+    }
+
     .reading {
         .box-book {
             grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;

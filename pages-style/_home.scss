@@ -209,30 +209,32 @@ body {
     position: fixed;
     left: 0;
     z-index: 9999;
+    opacity: 0;
     top: -100%;
     width: 100%;
     height: 100%;
     background-color: $blue-color;
-    padding: 2rem 1.87rem;
+    padding: 0.5rem 1.87rem;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     &.open {
         top: 0;
+        opacity: 1;
     }
 
     .head {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 3.75rem;
+        margin-bottom: 2.75rem;
 
         .mobil-logo {
             width: 90px;
         }
 
         .close-menu-mobil {
-            width: 20px;
+            width: 18px;
             cursor: pointer;
         }
     }
@@ -242,12 +244,13 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        height: 85%;
+        height: 85% !important;
+        padding: 0;
 
         &-item {
             font-size: 1.57rem;
-            padding: 20px 0;
-            width: 100%;
+            padding: 5px 0 !important;
+            width: 80%;
             text-align: center;
             cursor: pointer;
 
@@ -255,7 +258,7 @@ body {
                 color: $bg-color;
                 text-transform: uppercase;
                 font-weight: 400;
-                font-size: 23px;
+                font-size: 17px;
             }
 
             .menu-lang {
@@ -280,7 +283,12 @@ body {
         }
 
         &-item:not(:last-child) {
-            border-top: 1px solid var(--text-gray);
+            border-top: 1px solid white !important;
+        }
+
+        &-item:last-child {
+            border: 1px solid white !important;
+            border-radius: 15px;
         }
     }
 
