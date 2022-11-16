@@ -5860,9 +5860,20 @@ hr {
 @media (max-width: 650px) {
   .head-account {
     background-color: #284AC2;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .head-account .logo-account {
+    width: 100px;
   }
   .container {
     height: calc(100ch - 655px);

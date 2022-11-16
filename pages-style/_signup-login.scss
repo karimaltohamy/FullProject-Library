@@ -140,9 +140,15 @@ $blue-color: #284AC2;
 @media (max-width: 650px) {
     .head-account {
         background-color: $blue-color;
-        padding: 15px;
+        padding: 10px;
         text-align: left;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-account {
+            width: 100px;
+        }
     }
 
     .container {
