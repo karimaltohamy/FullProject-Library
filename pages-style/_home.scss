@@ -254,19 +254,33 @@ body {
             text-align: center;
             cursor: pointer;
 
-            .mobil-list-link {
-                color: $bg-color;
-                text-transform: uppercase;
-                font-weight: 400;
-                font-size: 17px;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                .mobil-list-link {
+                    color: $bg-color;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 17px;
+                    order: 2;
+                }
+
+                .icon-menu-mobil {
+                    width: 19px;
+                    color: white;
+                    order: 1;
+                }
             }
 
             .menu-lang {
                 background-color: white;
                 color: $blue-color;
                 padding: 10px;
-                border-radius: 10px;
-                width: 40%;
+                border-radius: 5px;
+                width: 75%;
                 margin: auto;
                 transition: all 3s;
                 display: none;
@@ -278,17 +292,50 @@ body {
                 .lang-item {
                     font-size: 17px;
                     font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    border: 1px solid $blue-color;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+
+                    img {
+                        order: 1;
+                    }
+
+                    .text-lang {
+                        order: 2;
+                    }
                 }
             }
         }
 
-        &-item:not(:last-child) {
+        &-item {
             border-top: 1px solid white !important;
         }
 
+        &-item:first-child {
+            border-top: transparent !important;
+        }
+
         &-item:last-child {
-            border: 1px solid white !important;
-            border-radius: 15px;
+           a {
+            font-size: 14px;
+            padding: 3px 7px;
+            border-radius: 5px;
+           }
+
+           .sign {
+            color: white;
+            border: 1px solid white;
+           }
+
+           .login {
+            background-color: white;
+            color: $blue-color;
+            font-weight: 600;
+           }
         }
     }
 
