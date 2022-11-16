@@ -71,7 +71,7 @@ body {
   overflow: hidden;
 }
 .head-page .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page .name-site img {
   cursor: pointer;
@@ -715,6 +715,10 @@ hr {
     -webkit-box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
             box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
   }
+  .aside .authors,
+.aside .sign {
+    display: none;
+  }
   .aside .toggle-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1067,7 +1071,7 @@ hr {
   overflow: hidden;
 }
 .head-page-details .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-details .name-site img {
   cursor: pointer;
@@ -1870,7 +1874,7 @@ hr {
   overflow: hidden;
 }
 .head-page-bookmark .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-bookmark .name-site img {
   cursor: pointer;
@@ -2297,6 +2301,10 @@ hr {
     border-top-right-radius: 20px;
     -webkit-box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
             box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
+  }
+  .aside-bookmark .authors,
+.aside-bookmark .sign {
+    display: none;
   }
   .aside-bookmark .toggle-menu {
     display: -webkit-box;
@@ -2988,6 +2996,7 @@ hr {
   .head-upload-2 {
     height: 80px;
     position: relative;
+    padding: 15px !important;
   }
   .head-upload-2 .head-app a {
     position: absolute;
@@ -2997,11 +3006,11 @@ hr {
     left: 15px;
   }
   .head-upload-2 .head-app h3 {
-    font-size: 17px;
+    font-size: 15px;
   }
   .head-upload-2 .head-app p {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .content-page-2 {
     padding: 15px !important;
@@ -3044,6 +3053,20 @@ hr {
   }
   .content-page-2 .form .check {
     margin-bottom: 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-page-2 .form .check label {
+    font-size: 14px;
+  }
+  .content-page-2 .form .button a {
+    padding: 2px !important;
+    font-size: 14px !important;
   }
 }
 [dir=rtl] .slick-slide {
@@ -3284,8 +3307,63 @@ hr {
   }
 }
 @media (max-width: 600px) {
+  .head-upload-3 {
+    height: 80px !important;
+    padding: 10px !important;
+    position: relative;
+  }
+  .head-upload-3 a {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 15px;
+  }
+  .head-upload-3 h3 {
+    font-size: 17px !important;
+  }
+  .content-page-3 {
+    padding: 0px 25px 35px 25px !important;
+  }
+  .content-page-3 .form .input-text {
+    margin-bottom: 10px !important;
+  }
+  .content-page-3 .form .input-text label {
+    margin-bottom: 5px !important;
+  }
+  .content-page-3 .form .input-text label span {
+    font-size: 13px !important;
+  }
+  .content-page-3 .form .input-text label .btn-text img {
+    width: 22px;
+  }
+  .content-page-3 .form .input-text input {
+    padding: 6px 13px !important;
+  }
+  .content-page-3 .form .textarea {
+    margin-bottom: 5px !important;
+  }
+  .content-page-3 .form .textarea label {
+    margin-bottom: 5px !important;
+  }
+  .content-page-3 .form .textarea label span {
+    font-size: 13px !important;
+  }
+  .content-page-3 .form .textarea label .btn-text img {
+    width: 22px;
+  }
+  .content-page-3 .form .textarea textarea {
+    height: 100px !important;
+    padding: 6px 15px !important;
+  }
   .book-slider {
     width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+  }
+  .btn-upload a {
+    padding: 2px !important;
+    font-size: 14px !important;
   }
 }
 /* End Page Upload 2 */
@@ -3403,7 +3481,7 @@ hr {
   overflow: hidden;
 }
 .head-page-profile-1 .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-profile-1 .name-site img {
   cursor: pointer;
@@ -3973,7 +4051,7 @@ hr {
   overflow: hidden;
 }
 .head-page-profile-2 .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-profile-2 .name-site img {
   cursor: pointer;
@@ -4542,7 +4620,7 @@ hr {
   overflow: hidden;
 }
 .head-page-chats .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-chats .name-site img {
   cursor: pointer;
@@ -5128,6 +5206,10 @@ hr {
     -webkit-box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
             box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
   }
+  .aside-chats .authors,
+.aside-chats .sign {
+    display: none;
+  }
   .aside-chats .toggle-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5333,7 +5415,7 @@ hr {
   overflow: hidden;
 }
 .head-page-authors .name-site a img {
-  width: 110px;
+  width: 145px;
 }
 .head-page-authors .name-site img {
   cursor: pointer;
@@ -5612,6 +5694,10 @@ hr {
     border-top-right-radius: 20px;
     -webkit-box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
             box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
+  }
+  .aside-authors .authors,
+.aside-authors .sign {
+    display: none;
   }
   .aside-authors .toggle-menu {
     display: -webkit-box;

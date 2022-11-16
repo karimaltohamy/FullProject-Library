@@ -28,7 +28,7 @@ $blue-color: #284AC2;
             overflow: hidden;
 
             img {
-                width: 110px;
+                width: 145px;
             }
         }
 
@@ -410,6 +410,11 @@ $blue-color: #284AC2;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
+
+        .authors,
+        .sign {
+            display: none;
+        }
 
 
         .toggle-menu {

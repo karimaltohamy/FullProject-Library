@@ -136,6 +136,18 @@ $blue-color: #284AC2;
     }
 }
 
+@media (max-width: 991px) {
+    .form-account {
+        max-width: 450px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-account {
+        max-width: 400px !important;
+    }
+}
+
 
 @media (max-width: 650px) {
     .head-account {
