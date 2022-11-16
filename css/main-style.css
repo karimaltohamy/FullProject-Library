@@ -913,12 +913,12 @@ hr {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0px 22px 0px 22px;
+    padding: 0px 0px 0px 22px;
     background-color: #284AC2;
     color: #FFF;
   }
   .search-app .logo-page {
-    width: 110px;
+    width: 120px;
   }
   .search-app .upload span {
     padding: 15px;
