@@ -176,7 +176,7 @@
             .box-category {
                 div {
                     span {
-                        padding: 10px 50px !important;
+                        padding: 10px 50px;
                     }
                 }
             }
@@ -188,3 +188,45 @@
     }
 }
 /* End Page Upload */
+
+@media(max-width: 500px) {
+    .head-upload {
+        height: 80px;
+        padding: 5px 20px;
+        position: relative;
+
+        .head-app {
+            a {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            p {
+                margin-top: 5px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .content-page {
+        padding: 15px !important;
+
+        .box-category {
+            div {
+                span {
+                    padding: 8px 35px !important;
+                }
+            }
+        }
+
+        .btn-next {
+            width: 100% !important;
+        }
+    }
+}

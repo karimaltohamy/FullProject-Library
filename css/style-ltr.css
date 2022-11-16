@@ -2706,13 +2706,43 @@ hr {
     display: none;
   }
   .page-upload .content-page .box-category div span {
-    padding: 10px 50px !important;
+    padding: 10px 50px;
   }
   .btn-next {
     width: 330px !important;
   }
 }
 /* End Page Upload */
+@media (max-width: 500px) {
+  .head-upload {
+    height: 80px;
+    padding: 5px 20px;
+    position: relative;
+  }
+  .head-upload .head-app a {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 15px;
+  }
+  .head-upload .head-app h3 {
+    font-size: 17px;
+  }
+  .head-upload .head-app p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .content-page {
+    padding: 15px !important;
+  }
+  .content-page .box-category div span {
+    padding: 8px 35px !important;
+  }
+  .content-page .btn-next {
+    width: 100% !important;
+  }
+}
 /* Start Head Upload Page 2 */
 .head-upload-2 {
   height: 90px;
@@ -2954,6 +2984,65 @@ hr {
   }
 }
 /* End Page Upload 2 */
+@media (max-width: 500px) {
+  .head-upload-2 {
+    height: 80px;
+    position: relative;
+  }
+  .head-upload-2 .head-app a {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 15px;
+  }
+  .head-upload-2 .head-app h3 {
+    font-size: 17px;
+  }
+  .head-upload-2 .head-app p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .content-page-2 {
+    padding: 15px !important;
+  }
+  .content-page-2 .form {
+    margin-top: 0 !important;
+  }
+  .content-page-2 .form .input-text {
+    margin-bottom: 5px !important;
+  }
+  .content-page-2 .form .input-text label {
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+  }
+  .content-page-2 .form .input-text input {
+    padding: 6px 13px !important;
+  }
+  .content-page-2 .form .textarea {
+    margin-bottom: 5px !important;
+  }
+  .content-page-2 .form .textarea label {
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+  }
+  .content-page-2 .form .textarea textarea {
+    height: 100px !important;
+    padding: 6px 15px !important;
+  }
+  .content-page-2 .form .upload {
+    margin-bottom: 10px !important;
+  }
+  .content-page-2 .form .upload label {
+    padding: 17px 20px !important;
+  }
+  .content-page-2 .form .upload label img {
+    width: 22px;
+  }
+  .content-page-2 .form .upload label p {
+    font-size: 13px;
+  }
+}
 [dir=rtl] .slick-slide {
   float: left;
 }

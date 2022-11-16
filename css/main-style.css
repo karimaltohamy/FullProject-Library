@@ -2706,13 +2706,43 @@ hr {
     display: none;
   }
   .page-upload .content-page .box-category div span {
-    padding: 10px 50px !important;
+    padding: 10px 50px;
   }
   .btn-next {
     width: 330px !important;
   }
 }
 /* End Page Upload */
+@media (max-width: 500px) {
+  .head-upload {
+    height: 80px;
+    padding: 5px 20px;
+    position: relative;
+  }
+  .head-upload .head-app a {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 15px;
+  }
+  .head-upload .head-app h3 {
+    font-size: 17px;
+  }
+  .head-upload .head-app p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .content-page {
+    padding: 15px !important;
+  }
+  .content-page .box-category div span {
+    padding: 8px 35px !important;
+  }
+  .content-page .btn-next {
+    width: 100% !important;
+  }
+}
 /* Start Head Upload Page 2 */
 .head-upload-2 {
   height: 90px;
@@ -2954,6 +2984,65 @@ hr {
   }
 }
 /* End Page Upload 2 */
+@media (max-width: 500px) {
+  .head-upload-2 {
+    height: 80px;
+    position: relative;
+  }
+  .head-upload-2 .head-app a {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 15px;
+  }
+  .head-upload-2 .head-app h3 {
+    font-size: 17px;
+  }
+  .head-upload-2 .head-app p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .content-page-2 {
+    padding: 15px !important;
+  }
+  .content-page-2 .form {
+    margin-top: 0 !important;
+  }
+  .content-page-2 .form .input-text {
+    margin-bottom: 5px !important;
+  }
+  .content-page-2 .form .input-text label {
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+  }
+  .content-page-2 .form .input-text input {
+    padding: 6px 13px !important;
+  }
+  .content-page-2 .form .textarea {
+    margin-bottom: 5px !important;
+  }
+  .content-page-2 .form .textarea label {
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+  }
+  .content-page-2 .form .textarea textarea {
+    height: 100px !important;
+    padding: 6px 15px !important;
+  }
+  .content-page-2 .form .upload {
+    margin-bottom: 10px !important;
+  }
+  .content-page-2 .form .upload label {
+    padding: 17px 20px !important;
+  }
+  .content-page-2 .form .upload label img {
+    width: 22px;
+  }
+  .content-page-2 .form .upload label p {
+    font-size: 13px;
+  }
+}
 [dir=rtl] .slick-slide {
   float: left;
 }
@@ -5623,7 +5712,7 @@ hr {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -5634,178 +5723,30 @@ hr {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.container .account {
-  width: 100%;
-}
-.container .account .title-account {
+
+.singup .title-signup {
   text-align: center;
   font-size: 25px !important;
   color: #284AC2;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 15px;
 }
-.container .account .form-account {
+
+.form-signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
-  background-color: #284AC2;
-  color: rgb(255, 255, 255);
-  max-width: 550px;
-  width: 90%;
-  border-radius: 5px;
-  margin: auto;
-  padding: 30px;
-}
-.container .account .form-account .logo-form {
-  margin: auto;
-  width: 110px;
-  height: 110px;
-  background-color: white;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.container .account .form-account .logo-form svg {
-  width: 100px;
-  color: #284AC2;
-}
-.container .account .form-account .box-input {
-  position: relative;
-}
-.container .account .form-account .box-input .input-form {
-  border-radius: 5px;
-  margin: 15px 0px;
-  outline: none;
-  padding: 8px 10px;
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-size: 17px;
-  color: #919191;
-}
-.container .account .form-account .box-input .icon-input {
-  position: absolute;
-  width: 20px;
-  left: 5px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #919191;
-}
-.container .account .form-account #file-input {
-  display: none;
-}
-.container .account .form-account label[for=file-input] {
-  padding: 3px 15px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: #284AC2;
-  background-color: white;
-  -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.container .account .form-account .image-preview {
-  margin: 0 0 1rem;
-  min-height: 250px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 75%;
-          flex: 1 0 75%;
-  background-color: #c1c1c1;
-}
-.container .account .form-account .container-btn {
-  margin: 30px auto 20px;
-}
-.container .account .form-account .container-btn .btn-form {
-  padding: 12px 41px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #284AC2;
-  border-radius: 5px;
-  border: 0;
-}
-.container .account .form-account .text-form {
-  text-align: center;
-}
-.container .account .form-account .text-form .to-login {
-  color: #919191;
-}
-
-@media (max-width: 450px) {
-  .head-account {
-    background-color: #284AC2;
-    padding: 15px;
-    text-align: left;
-  }
-  .container {
-    height: calc(100ch - 655px);
-    display: block;
-    margin-top: 80px;
-  }
-  .container .account .title-account {
-    font-size: 16px !important;
-  }
-  .container .account .form-account {
-    padding: 15px !important;
-  }
-  .container .account .form-account .logo-form {
-    width: 70px !important;
-    height: 70px !important;
-  }
-  .container .account .form-account .logo-form svg {
-    width: 60px !important;
-  }
-  .container .account .form-account .box-input .input-form {
-    margin: 8px 0px !important;
-    padding: 6px 10px !important;
-    font-size: 14px !important;
-  }
-  .container .account .form-account .box-input .icon-input {
-    width: 15px !important;
-    left: 7px !important;
-  }
-  .container .account .form-account label[for=file-input] {
-    padding: 2px 9px !important;
-    font-size: 12px !important;
-  }
-  .container .account .form-account .container-btn {
-    margin: 20px auto 10px !important;
-  }
-  .container .account .form-account .container-btn .btn-form {
-    padding: 10px 20px !important;
-    font-size: 15px !important;
-  }
-  .container .account .form-account .text-form {
-    font-size: 12px;
-  }
-  .container .account .form-account .text-form a {
-    margin-right: 5px;
-  }
+  -ms-flex-direction: column;
+  flex-direction: column;
 }

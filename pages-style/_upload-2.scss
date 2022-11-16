@@ -232,3 +232,78 @@
     }
 }
 /* End Page Upload 2 */
+
+@media(max-width: 500px) {
+    .head-upload-2 {
+        height: 80px;
+        position: relative;
+
+        .head-app {
+            a {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            p {
+                margin-top: 5px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .content-page-2 {
+        padding: 15px !important;
+
+        .form {
+            margin-top: 0 !important;
+
+            .input-text {
+                margin-bottom: 5px !important;
+
+                label {
+                    margin-bottom: 2px !important;
+                    font-size: 13px !important;
+                }
+
+                input {
+                    padding: 6px 13px !important;
+                }
+            }
+
+            .textarea {
+                margin-bottom: 5px !important;
+
+                label {
+                    margin-bottom: 2px !important;
+                    font-size: 13px !important;
+                }
+
+                textarea {
+                    height: 100px !important;
+                    padding: 6px 15px !important;
+                }
+            }
+
+            .upload {
+                margin-bottom: 10px !important;
+
+                label {
+                    padding: 17px 20px !important;
+                    img {
+                        width: 22px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
