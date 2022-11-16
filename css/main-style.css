@@ -1619,7 +1619,7 @@ hr {
   .head-details-page-app {
     display: block;
     width: 100%;
-    height: 320px;
+    height: 230px;
     background-color: #284AC2;
   }
   .head-details-page-app div {
@@ -1635,6 +1635,15 @@ hr {
     padding: 20px;
     color: #FFF;
   }
+  .head-details-page-app div span img {
+    height: 16px;
+  }
+  .head-details-page-app div h3 {
+    font-size: 15px;
+  }
+  .head-details-page-app div a img {
+    height: 12px;
+  }
   .aside-details {
     display: none;
   }
@@ -1644,24 +1653,29 @@ hr {
   }
   .content-book-details .main-box-details {
     width: 100% !important;
+    padding: 10px 10px !important;
   }
   .content-book-details .main-box-details .author-book {
     display: none !important;
   }
   .content-book-details .box-details {
-    gap: 30px;
+    gap: 5px;
+    padding: 10px !important;
   }
   .content-book-details .box-details .img-book img {
     margin: auto;
     display: block;
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 245px;
     border-radius: 15px;
   }
   .content-book-details .box-details .details .head {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content-book-details .box-details .details .head h2 {
+    font-size: 15px;
   }
   .content-book-details .box-details .details .head .hart {
     display: none !important;
@@ -1678,17 +1692,53 @@ hr {
   .content-book-details .box-details .book-author .info {
     text-align: center;
     font-size: 18px !important;
+    -webkit-transform: translateY(-9px) !important;
+            transform: translateY(-9px) !important;
   }
   .content-book-details .box-details .book-author .info div {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
+  .content-book-details .box-details .book-author .info div img {
+    height: 12px;
+  }
+  .content-book-details .box-details .book-author .info div span {
+    font-size: 12px;
+  }
   .content-book-details .box-details .book-author .info > span {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     color: rgb(104, 104, 104);
+    font-size: 13px !important;
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+  .content-book-details .box-details .info-interaction-spp {
+    margin-top: 5px !important;
+    padding: 8px 0 !important;
+    margin-bottom: 0px;
+  }
+  .content-book-details .box-details .info-interaction-spp div span {
+    font-size: 13px !important;
+  }
+  .content-book-details .box-details .info-interaction-spp div img {
+    height: 13px !important;
+  }
+  .content-book-details .box-details .rate-this-book {
+    padding: 5px 0 10px 0 !important;
+  }
+  .content-book-details .box-details .rate-this-book h3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .content-book-details .box-details .rate-this-book p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .content-book-details .box-details .rate-this-book img {
+    height: 12px;
   }
   .content-book-details .box-details .book-brief {
     display: none;
@@ -1700,7 +1750,13 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 40px;
+    margin-top: 0px !important;
+    padding-top: 10px !important;
+    gap: 10px !important;
+  }
+  .content-book-details .box-details .button-book a {
+    padding: 2px 25px !important;
+    font-size: 14px !important;
   }
   .content-book-details .interaction .info-interaction {
     display: none;
