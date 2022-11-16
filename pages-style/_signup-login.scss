@@ -9,6 +9,10 @@ $blue-color: #284AC2;
     box-sizing: border-box;
 }
 
+.head-account {
+    display: none;
+}
+
 
 .container {
     height: 100vh;
@@ -133,11 +137,12 @@ $blue-color: #284AC2;
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
     .head-account {
         background-color: $blue-color;
         padding: 15px;
         text-align: left;
+        display: block;
     }
 
     .container {

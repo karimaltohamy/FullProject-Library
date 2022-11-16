@@ -5718,7 +5718,11 @@ hr {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.head-account {
+  display: none;
 }
 
 .container {
@@ -5729,30 +5733,179 @@ hr {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.singup .title-signup {
+.container .account {
+  width: 100%;
+}
+.container .account .title-account {
   text-align: center;
   font-size: 25px !important;
   color: #284AC2;
   font-weight: 600;
   margin: 0;
+  margin-bottom: 15px;
 }
-
-.form-signup {
+.container .account .form-account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  background-color: #284AC2;
+  color: rgb(255, 255, 255);
+  max-width: 550px;
+  width: 90%;
+  border-radius: 5px;
+  margin: auto;
+  padding: 30px;
+}
+.container .account .form-account .logo-form {
+  margin: auto;
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .account .form-account .logo-form svg {
+  width: 100px;
+  color: #284AC2;
+}
+.container .account .form-account .box-input {
+  position: relative;
+}
+.container .account .form-account .box-input .input-form {
+  border-radius: 5px;
+  margin: 15px 0px;
+  outline: none;
+  padding: 8px 10px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 17px;
+  color: #919191;
+}
+.container .account .form-account .box-input .icon-input {
+  position: absolute;
+  width: 20px;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #919191;
+}
+.container .account .form-account #file-input {
+  display: none;
+}
+.container .account .form-account label[for=file-input] {
+  padding: 3px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #284AC2;
+  background-color: white;
+  -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .account .form-account .image-preview {
+  margin: 0 0 1rem;
+  min-height: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 75%;
+          flex: 1 0 75%;
+  background-color: #c1c1c1;
+}
+.container .account .form-account .container-btn {
+  margin: 30px auto 20px;
+}
+.container .account .form-account .container-btn .btn-form {
+  padding: 12px 41px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #284AC2;
+  border-radius: 5px;
+  border: 0;
+}
+.container .account .form-account .text-form {
+  text-align: center;
+}
+.container .account .form-account .text-form .to-login {
+  color: #919191;
+}
+
+@media (max-width: 650px) {
+  .head-account {
+    background-color: #284AC2;
+    padding: 15px;
+    text-align: left;
+    display: block;
+  }
+  .container {
+    height: calc(100ch - 655px);
+    display: block;
+    margin-top: 80px;
+  }
+  .container .account .title-account {
+    font-size: 16px !important;
+  }
+  .container .account .form-account {
+    padding: 15px !important;
+  }
+  .container .account .form-account .logo-form {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .container .account .form-account .logo-form svg {
+    width: 60px !important;
+  }
+  .container .account .form-account .box-input .input-form {
+    margin: 8px 0px !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+  .container .account .form-account .box-input .icon-input {
+    width: 15px !important;
+    left: 7px !important;
+  }
+  .container .account .form-account label[for=file-input] {
+    padding: 2px 9px !important;
+    font-size: 12px !important;
+  }
+  .container .account .form-account .container-btn {
+    margin: 20px auto 10px !important;
+  }
+  .container .account .form-account .container-btn .btn-form {
+    padding: 10px 20px !important;
+    font-size: 15px !important;
+  }
+  .container .account .form-account .text-form {
+    font-size: 12px;
+  }
+  .container .account .form-account .text-form a {
+    margin-right: 5px;
+  }
 }
