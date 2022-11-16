@@ -145,6 +145,10 @@ $blue-color: #284AC2;
     gap: 50px;
     padding-top: 120px;
 
+    .toggle-menu {
+        display: none;
+    }
+
     a {
         display: block;
         display: flex;

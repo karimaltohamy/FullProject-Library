@@ -918,7 +918,7 @@ hr {
     color: #FFF;
   }
   .search-app .logo-page {
-    width: 85px;
+    width: 110px;
   }
   .search-app .upload span {
     padding: 15px;
@@ -5469,6 +5469,9 @@ hr {
           flex-direction: column;
   gap: 50px;
   padding-top: 120px;
+}
+.aside-authors .toggle-menu {
+  display: none;
 }
 .aside-authors a {
   display: block;
