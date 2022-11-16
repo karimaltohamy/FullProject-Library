@@ -18,9 +18,9 @@ $blue-color: #284AC2;
     justify-content: center;
     align-items: center;
 
-    .signup {
+    .account {
         width: 100%;
-        .title-signup {
+        .title-account {
             text-align: center;
             font-size: 25px !important;
             color: $blue-color;
@@ -29,7 +29,7 @@ $blue-color: #284AC2;
             margin-bottom: 15px;
         }
         
-        .form-signup {
+        .form-account {
             display: flex;
             flex-direction: column;
             margin-bottom: 10px;
@@ -134,7 +134,7 @@ $blue-color: #284AC2;
 
 
 @media (max-width: 450px) {
-    .head-sign {
+    .head-account {
         background-color: $blue-color;
         padding: 15px;
         text-align: left;
@@ -144,12 +144,12 @@ $blue-color: #284AC2;
         height: calc(100ch - 655px);
         display: block;
         margin-top: 80px;
-        .signup {
-            .title-signup {
+        .account {
+            .title-account {
                 font-size: 16px !important;
             }
     
-            .form-signup {
+            .form-account {
                 padding: 15px !important;
     
                 .logo-form {
@@ -184,12 +184,15 @@ $blue-color: #284AC2;
     
                     .btn-form {
                         padding: 10px 20px !important;
-                        font-size: 14px !important;
+                        font-size: 15px !important;
                     }
                 }
     
                 .text-form {
                     font-size: 12px;
+                    a {
+                        margin-right: 5px;
+                    }
                 }
             }
         }

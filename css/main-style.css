@@ -5643,10 +5643,10 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
-.container .signup {
+.container .account {
   width: 100%;
 }
-.container .signup .title-signup {
+.container .account .title-account {
   text-align: center;
   font-size: 25px !important;
   color: #284AC2;
@@ -5654,7 +5654,7 @@ hr {
   margin: 0;
   margin-bottom: 15px;
 }
-.container .signup .form-signup {
+.container .account .form-account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5671,7 +5671,7 @@ hr {
   margin: auto;
   padding: 30px;
 }
-.container .signup .form-signup .logo-form {
+.container .account .form-account .logo-form {
   margin: auto;
   width: 110px;
   height: 110px;
@@ -5687,14 +5687,14 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.container .signup .form-signup .logo-form svg {
+.container .account .form-account .logo-form svg {
   width: 100px;
   color: #284AC2;
 }
-.container .signup .form-signup .box-input {
+.container .account .form-account .box-input {
   position: relative;
 }
-.container .signup .form-signup .box-input .input-form {
+.container .account .form-account .box-input .input-form {
   border-radius: 5px;
   margin: 15px 0px;
   outline: none;
@@ -5705,7 +5705,7 @@ hr {
   font-size: 17px;
   color: #919191;
 }
-.container .signup .form-signup .box-input .icon-input {
+.container .account .form-account .box-input .icon-input {
   position: absolute;
   width: 20px;
   left: 5px;
@@ -5714,10 +5714,10 @@ hr {
           transform: translateY(-50%);
   color: #919191;
 }
-.container .signup .form-signup #file-input {
+.container .account .form-account #file-input {
   display: none;
 }
-.container .signup .form-signup label[for=file-input] {
+.container .account .form-account label[for=file-input] {
   padding: 3px 15px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -5732,7 +5732,7 @@ hr {
   border-radius: 5px;
   cursor: pointer;
 }
-.container .signup .form-signup .image-preview {
+.container .account .form-account .image-preview {
   margin: 0 0 1rem;
   min-height: 250px;
   -webkit-box-flex: 1;
@@ -5740,10 +5740,10 @@ hr {
           flex: 1 0 75%;
   background-color: #c1c1c1;
 }
-.container .signup .form-signup .container-btn {
+.container .account .form-account .container-btn {
   margin: 30px auto 20px;
 }
-.container .signup .form-signup .container-btn .btn-form {
+.container .account .form-account .container-btn .btn-form {
   padding: 12px 41px;
   font-size: 16px;
   font-weight: 600;
@@ -5751,15 +5751,15 @@ hr {
   border-radius: 5px;
   border: 0;
 }
-.container .signup .form-signup .text-form {
+.container .account .form-account .text-form {
   text-align: center;
 }
-.container .signup .form-signup .text-form .to-login {
+.container .account .form-account .text-form .to-login {
   color: #919191;
 }
 
 @media (max-width: 450px) {
-  .head-sign {
+  .head-account {
     background-color: #284AC2;
     padding: 15px;
     text-align: left;
@@ -5769,40 +5769,43 @@ hr {
     display: block;
     margin-top: 80px;
   }
-  .container .signup .title-signup {
+  .container .account .title-account {
     font-size: 16px !important;
   }
-  .container .signup .form-signup {
+  .container .account .form-account {
     padding: 15px !important;
   }
-  .container .signup .form-signup .logo-form {
+  .container .account .form-account .logo-form {
     width: 70px !important;
     height: 70px !important;
   }
-  .container .signup .form-signup .logo-form svg {
+  .container .account .form-account .logo-form svg {
     width: 60px !important;
   }
-  .container .signup .form-signup .box-input .input-form {
+  .container .account .form-account .box-input .input-form {
     margin: 8px 0px !important;
     padding: 6px 10px !important;
     font-size: 14px !important;
   }
-  .container .signup .form-signup .box-input .icon-input {
+  .container .account .form-account .box-input .icon-input {
     width: 15px !important;
     left: 7px !important;
   }
-  .container .signup .form-signup label[for=file-input] {
+  .container .account .form-account label[for=file-input] {
     padding: 2px 9px !important;
     font-size: 12px !important;
   }
-  .container .signup .form-signup .container-btn {
+  .container .account .form-account .container-btn {
     margin: 20px auto 10px !important;
   }
-  .container .signup .form-signup .container-btn .btn-form {
+  .container .account .form-account .container-btn .btn-form {
     padding: 10px 20px !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
-  .container .signup .form-signup .text-form {
+  .container .account .form-account .text-form {
     font-size: 12px;
+  }
+  .container .account .form-account .text-form a {
+    margin-right: 5px;
   }
 }
