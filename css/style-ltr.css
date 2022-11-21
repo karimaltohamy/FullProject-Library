@@ -4765,6 +4765,9 @@ hr {
   .head-app-profile-2 a img {
     height: 17px !important;
   }
+  .head-app-profile-2 a:last-child img {
+    height: 14px !important;
+  }
   .head-app-profile-2 p {
     font-size: 15px !important;
   }

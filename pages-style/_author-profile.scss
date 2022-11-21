@@ -524,6 +524,12 @@ $blue-color: #284AC2;
             }
         }
 
+        a:last-child {
+            img {
+                height: 14px !important;
+            }
+        }
+
         p {
             font-size: 15px !important;
         }
