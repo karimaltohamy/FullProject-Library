@@ -5388,7 +5388,7 @@ hr {
 .content-chats .type-chat .chat-content {
   padding: 15px;
   overflow: auto;
-  min-height: 620px;
+  height: 620px;
 }
 .content-chats .type-chat .chat-content .right {
   display: -webkit-box;
@@ -5723,7 +5723,7 @@ hr {
     width: 19px;
   }
   .type-chat .chat-content {
-    height: 330px !important;
+    height: 360px !important;
   }
   .type-chat .chat-content div {
     margin-bottom: 5px !important;

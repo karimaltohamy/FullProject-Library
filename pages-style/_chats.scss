@@ -475,7 +475,7 @@ $blue-color: #284AC2;
         .chat-content {
             padding: 15px;
             overflow: auto;
-            min-height: 620px;
+            height: 620px;
 
 
 
@@ -842,7 +842,7 @@ $blue-color: #284AC2;
         }
 
         .chat-content {
-            height: 330px !important;
+            height: 360px !important;
             
             div {
                 margin-bottom: 5px !important;
