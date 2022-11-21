@@ -438,23 +438,36 @@ $blue-color: #284AC2;
         flex: 1;
 
         .head {
-            display: flex;
-            gap: 10px;
             border-bottom: 1px solid #CCC;
-            padding: 15px 15px 0 15px;
-
-            img {
-                width: 65px;
-                border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px ;
+            .person {
+                display: flex;
+                gap: 10px;
+                padding: 15px 15px 0 15px;
+    
+                img {
+                    width: 65px;
+                    border-radius: 50%;
+                }
+    
+                .info {
+                    p {
+                        margin: 0;
+                    }
+    
+                    span {
+                        color: grey;
+                    }
+                }
             }
 
-            .info {
-                p {
-                    margin: 0;
-                }
-
-                span {
-                    color: grey;
+            .back {
+                cursor: pointer;
+                svg {
+                    width: 25px;
                 }
             }
         }
@@ -462,7 +475,7 @@ $blue-color: #284AC2;
         .chat-content {
             padding: 15px;
             overflow: auto;
-            height: 620px;
+            min-height: 620px;
 
             .right {
                 display: flex;
@@ -767,5 +780,71 @@ $blue-color: #284AC2;
             }
         }
     }
+
+    .type-chat {
+        .head {
+            .person {
+                img {
+                    width: 50px !important;
+                }
+
+                p {
+                    font-size: 15px !important;
+                }
+
+                span {
+                    font-size: 14px !important;
+                    transform: translateY(-5px) !important;
+                    display: block ;
+                }
+            }
+
+            .back {
+                svg {
+                    width: 19px;
+                }
+            }
+        }
+
+        .chat-content {
+            min-height: 430px !important;
+            
+            div {
+                margin-bottom: 5px !important;
+
+                p {
+                    padding: 4px 10px !important;
+                    font-size: 14px !important;
+                }
+            }
+        }
+
+        .input-chat {
+            padding: 20px 15px !important;
+
+            .input {
+                input {
+                    padding: 20px 15px !important;
+                }
+
+                img {
+                    width: 22px;
+                }
+            }
+
+            .input-search {
+                img {
+                    width: 34px !important;
+                }
+            }
+        }
+    }
 }
 
+.close-chat{
+    display: none !important;
+}
+
+.open-chat {
+    display: block !important;
+}

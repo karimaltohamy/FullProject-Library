@@ -5351,27 +5351,45 @@ hr {
           flex: 1;
 }
 .content-chats .type-chat .head {
+  border-bottom: 1px solid #CCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+.content-chats .type-chat .head .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  border-bottom: 1px solid #CCC;
   padding: 15px 15px 0 15px;
 }
-.content-chats .type-chat .head img {
+.content-chats .type-chat .head .person img {
   width: 65px;
   border-radius: 50%;
 }
-.content-chats .type-chat .head .info p {
+.content-chats .type-chat .head .person .info p {
   margin: 0;
 }
-.content-chats .type-chat .head .info span {
+.content-chats .type-chat .head .person .info span {
   color: grey;
+}
+.content-chats .type-chat .head .back {
+  cursor: pointer;
+}
+.content-chats .type-chat .head .back svg {
+  width: 25px;
 }
 .content-chats .type-chat .chat-content {
   padding: 15px;
   overflow: auto;
-  height: 620px;
+  min-height: 620px;
 }
 .content-chats .type-chat .chat-content .right {
   display: -webkit-box;
@@ -5650,7 +5668,52 @@ hr {
     height: 18px !important;
     font-size: 12px !important;
   }
+  .type-chat .head .person img {
+    width: 50px !important;
+  }
+  .type-chat .head .person p {
+    font-size: 15px !important;
+  }
+  .type-chat .head .person span {
+    font-size: 14px !important;
+    -webkit-transform: translateY(-5px) !important;
+            transform: translateY(-5px) !important;
+    display: block;
+  }
+  .type-chat .head .back svg {
+    width: 19px;
+  }
+  .type-chat .chat-content {
+    min-height: 430px !important;
+  }
+  .type-chat .chat-content div {
+    margin-bottom: 5px !important;
+  }
+  .type-chat .chat-content div p {
+    padding: 4px 10px !important;
+    font-size: 14px !important;
+  }
+  .type-chat .input-chat {
+    padding: 20px 15px !important;
+  }
+  .type-chat .input-chat .input input {
+    padding: 20px 15px !important;
+  }
+  .type-chat .input-chat .input img {
+    width: 22px;
+  }
+  .type-chat .input-chat .input-search img {
+    width: 34px !important;
+  }
 }
+.close-chat {
+  display: none !important;
+}
+
+.open-chat {
+  display: block !important;
+}
+
 /* Start Head Page */
 .head-page-authors {
   display: -webkit-box;
