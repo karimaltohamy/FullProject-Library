@@ -477,9 +477,13 @@ $blue-color: #284AC2;
             overflow: auto;
             min-height: 620px;
 
+
+
             .right {
                 display: flex;
+                position: relative;
                 justify-content: flex-start;
+                padding-bottom: 10px;
 
                 p {
                     background-color: #D1DAF9;
@@ -488,11 +492,27 @@ $blue-color: #284AC2;
                     padding: 10px;
                     border-radius: 15px 15px 0 15px;
                 }
+
+                .date {
+                    position: absolute;
+                    bottom: -11px;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    span {
+                        font-size: 13px;
+                        color: gray;
+                    }
+                }
             }
 
             .left {
                 display: flex;
+                position: relative;
                 justify-content: flex-end;
+                padding-bottom: 10px;
 
                 p {
                     background-color: #284AC2;
@@ -500,6 +520,21 @@ $blue-color: #284AC2;
                     padding: 10px;
                     border-radius: 15px 15px 15px 0 ;
                     width: fit-content;
+                }
+
+                .date {
+                    position: absolute;
+                    bottom: -11px;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    gap: 8px;
+
+                    span {
+                        font-size: 13px;
+                        color: gray;
+                    }
                 }
             }
         }
@@ -807,14 +842,22 @@ $blue-color: #284AC2;
         }
 
         .chat-content {
-            min-height: 430px !important;
+            min-height: 410px !important;
             
             div {
                 margin-bottom: 5px !important;
 
                 p {
                     padding: 4px 10px !important;
-                    font-size: 14px !important;
+                    font-size: 13px !important;
+                }
+
+                .date {
+                    bottom: -15px !important;
+
+                    span {
+                        font-size: 10px !important;
+                    }
                 }
             }
         }

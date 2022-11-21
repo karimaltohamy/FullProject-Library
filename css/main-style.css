@@ -5394,9 +5394,11 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-bottom: 10px;
 }
 .content-chats .type-chat .chat-content .right p {
   background-color: #D1DAF9;
@@ -5407,13 +5409,31 @@ hr {
   padding: 10px;
   border-radius: 15px 15px 0 15px;
 }
+.content-chats .type-chat .chat-content .right .date {
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.content-chats .type-chat .chat-content .right .date span {
+  font-size: 13px;
+  color: gray;
+}
 .content-chats .type-chat .chat-content .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 10px;
 }
 .content-chats .type-chat .chat-content .left p {
   background-color: #284AC2;
@@ -5423,6 +5443,26 @@ hr {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.content-chats .type-chat .chat-content .left .date {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 8px;
+}
+.content-chats .type-chat .chat-content .left .date span {
+  font-size: 13px;
+  color: gray;
 }
 .content-chats .type-chat .input-chat {
   display: -webkit-box;
@@ -5683,14 +5723,20 @@ hr {
     width: 19px;
   }
   .type-chat .chat-content {
-    min-height: 430px !important;
+    min-height: 410px !important;
   }
   .type-chat .chat-content div {
     margin-bottom: 5px !important;
   }
   .type-chat .chat-content div p {
     padding: 4px 10px !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
+  }
+  .type-chat .chat-content div .date {
+    bottom: -15px !important;
+  }
+  .type-chat .chat-content div .date span {
+    font-size: 10px !important;
   }
   .type-chat .input-chat {
     padding: 20px 15px !important;
