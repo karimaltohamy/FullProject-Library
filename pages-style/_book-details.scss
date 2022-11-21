@@ -427,9 +427,21 @@ $blue-color: #284AC2;
 
                 .info-cooment {
                     flex: 1;
-                    h3 {
-                        margin: 0 ;
+
+                    .head-info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h3 {
+                            margin: 0 ;
+                        }
+
+                        .connect {
+                           display: none;
+                        }
                     }
+                   
 
                     p {
                         margin: 0;
@@ -693,16 +705,97 @@ $blue-color: #284AC2;
             }
         }
 
+        .book-author-app {
+            padding: 0px 20px;
+            h2 {
+                font-size: 16px !important;
+            }
+
+            .author {
+                gap: 8px !important;
+
+            .img {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    }
+                }
+
+                .info {
+                    h3 {
+                        font-size: 15px !important;
+                    }
+
+                    div {
+                        font-size: 13px;
+                        transform: translateY(-5px);
+
+                        img {
+                            height: 10px !important;
+                        }
+                    }
+
+                    a {
+                        margin-top: 1px !important;
+                        font-size: 12px !important;
+                        padding: 3px 15px !important;
+                    }
+                }
+            }
+
+            .athor-info {
+                margin-top: 10px;
+
+                div {
+                    margin-top: 5px;
+                    gap: 0px !important;
+                    font-size: 12px;
+                    margin-bottom: 5px !important;
+
+                    span {
+                        width: 35px;
+                    }
+                }
+            }
+        }
+
         .interaction {
+            padding: 0px 20px !important;
             .info-interaction {
                 display: none;
             }
 
+            .form {
+                margin-top: 15px !important;
+
+                h2 {
+                    font-size: 14px;
+                }
+
+                .form-app {
+                    margin-top: 0px;
+                    margin-bottom: 13px !important;
+
+                    textarea  {
+                        font-size: 16px !important;
+                        padding: 6px 13px 0 !important;
+                    }
+
+                    button {
+                        img {
+                            height: 19px !important;
+                        }
+                    }
+                }
+            }
+
             .comments {
+                margin-top: 20px !important;
+
                 .comment-user {
-                    margin-bottom: 35px !important;
+                    margin-bottom: 3px !important;
                     border-bottom: 1px solid #E2E2E2;
-                    padding-bottom: 15px;
+                    padding-bottom: 10px;
 
                     .like {
                         display: none !important;
@@ -710,6 +803,49 @@ $blue-color: #284AC2;
 
                     .more {
                         display: none;
+                    }
+
+                    .img {
+                        img {
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+
+                    .info-cooment {
+                        .head-info {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            h3 {
+                                font-size: 16px !important;
+                            }
+
+                            .connect {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px; 
+
+                                a {
+                                    background: #284AC2;
+                                    color: white;
+                                    padding: 1px 10px;
+                                    font-size: 10px;
+                                    border-radius: 6px;
+
+                                    &:last-child {
+                                        color: #284AC2;
+                                        background-color: white;
+                                        border: 1px solid #284AC2;
+                                    }
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 12px !important;
+                        }
                     }
                 }
             }
