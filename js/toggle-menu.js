@@ -20,3 +20,14 @@ let menuLang = document.querySelector(".menu-lang");
 itemOpenLang.addEventListener("click", () => {
   menuLang.classList.toggle("open-lang");
 });
+
+// toggle web list
+
+let iconListWeb = document.querySelector(".icon-list-web");
+let aside = document.querySelector(".aside");
+let content = document.querySelector(".content");
+
+iconListWeb.addEventListener("click", () => {
+  aside.classList.toggle("active-aside");
+  content.classList.toggle("active-margin");
+});

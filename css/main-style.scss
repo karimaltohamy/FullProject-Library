@@ -1,4 +1,6 @@
 @use "../pages-style/home";
+@use "../components/aside";
+@use "../components/head-page";
 @use "../pages-style/book-details";
 @use "../pages-style/bookmark";
 @use "../pages-style/upload";
@@ -10,3 +12,6 @@
 @use "../pages-style/authors";
 @use "../pages-style/signup-login";
 
+.active-margin {
+    margin: 70px 35px 0 0;
+}

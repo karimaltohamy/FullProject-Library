@@ -15,7 +15,7 @@
         <!-- Start Head Page -->
         <div class="head-page">
             <div class="name-site">
-                <img src="images/icon open-menu.png" alt="menu-icon">
+                <img class="icon-list-web" src="images/icon open-menu.png" alt="menu-icon">
                 <a href="index.html">
                     <img src="images/Logo_web.png" alt="logo">
                 </a>
@@ -37,20 +37,19 @@
                     <div class="choose">
                         <a href="#">
                             <img src="images/lang-ar.png" alt="icon">
-                            <span>AR</span>
+                            <span>Arabic</span>
                         </a>
 
                         <a href="#">
                             <img src="images/lang-en.png" alt="icon">
-                            <span>EN</span>
+                            <span>English</span>
                         </a>
                     </div>
                 </div>
 
-                <label for="upload" title="انشر كتاب">
+                <a class="upload-icon" href="upload.html" title="انشر كتاب">
                     <img src="images/icon upload.png" alt="icon">
-                </label>
-                <input type="file" id="upload" style="display: none;">
+                </a>
 
                 <a href="reader-profile.html">
                     <img src="images/ellipse 1.png" alt="icon">
@@ -180,7 +179,7 @@
         <!-- End App Page -->
 
         <!-- Start Content Page Home -->
-        <div class="content-home">
+        <div class="content-home content">
             <!-- Start Links Home -->
             <div class="links-home">
                 <ul>
@@ -649,9 +648,9 @@
                 document.querySelector(".choose").classList.toggle("open-lang")
             }
 
-            document.querySelector(".img-user").onclick = () => {
-                document.querySelector(".drop-menu").classList.toggle("open-menu")
-            }
+            // document.querySelector(".img-user").onclick = () => {
+            //     document.querySelector(".drop-menu").classList.toggle("open-menu")
+            // }
         </script>
     </body>
 </html>
