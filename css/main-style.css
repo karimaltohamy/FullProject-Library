@@ -764,7 +764,7 @@ hr {
   z-index: 99;
 }
 .aside.active-aside {
-  width: 50px;
+  width: 65px;
   padding-top: 95px;
 }
 .aside.active-aside a span {
@@ -5061,5 +5061,5 @@ hr {
   }
 }
 .active-margin {
-  margin: 70px 35px 0 0;
+  margin: 70px 45px 0 0;
 }
