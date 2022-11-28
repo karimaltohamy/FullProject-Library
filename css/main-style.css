@@ -206,7 +206,7 @@ body {
 /* Start Content Page Home */
 .content-home {
   overflow: hidden;
-  margin: 85px 120px 0 0;
+  margin: 70px 120px 0 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1075,7 +1075,7 @@ hr {
 .content-book-details {
   overflow: hidden;
   margin: 70px 120px 0 0;
-  padding: 0 45px 0 0;
+  padding: 0 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2025,7 +2025,7 @@ hr {
   gap: 20px;
 }
 .contnet-bookmark .content-container .box-mark .box {
-  padding: 20px;
+  padding: 15px 20px;
   background-color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2051,7 +2051,7 @@ hr {
 .contnet-bookmark .content-container .box-mark .box .info .head .name-book p {
   margin-bottom: 0;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 19px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2068,8 +2068,11 @@ hr {
           align-items: center;
   gap: 30px;
 }
-.contnet-bookmark .content-container .box-mark .box .info .desc {
-  font-size: 16px;
+.contnet-bookmark .content-container .box-mark .box .info .head .mark img {
+  width: 16px;
+}
+.contnet-bookmark .content-container .box-mark .box .info .desc p {
+  font-size: 15px;
   color: #656161;
 }
 .contnet-bookmark .content-container .box-mark .box .info .num-page {

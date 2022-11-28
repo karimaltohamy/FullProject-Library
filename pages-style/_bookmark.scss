@@ -163,7 +163,7 @@ $blue-color: #284AC2;
             gap: 20px;
 
             .box {
-                padding: 20px;
+                padding: 15px 20px;
                 background-color: #FFF;
                 display: flex;
                 gap: 30px;
@@ -186,7 +186,7 @@ $blue-color: #284AC2;
                             p {
                                 margin-bottom: 0;
                                 margin-top: 0;
-                                font-size: 20px;
+                                font-size: 19px;
                                 width: fit-content;
                             }
 
@@ -199,12 +199,18 @@ $blue-color: #284AC2;
                             display: flex;
                             align-items: center;
                             gap: 30px;
+
+                            img {
+                                width: 16px;
+                            }
                         }
                     }
 
                     .desc {
-                        font-size: 16px;
-                        color: #656161;
+                        p {
+                            font-size: 15px;
+                            color: #656161;
+                        }
                     }
 
                     .num-page {
