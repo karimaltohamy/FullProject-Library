@@ -19,7 +19,14 @@ $blue-color: #284AC2;
     z-index: 99;
 
     &.active-aside {
-        right: -300px;
+        width: 50px;
+        padding-top: 95px;
+
+        a {
+            span {
+                display: none;
+            }
+        }
     }
 
     a {
@@ -53,7 +60,7 @@ $blue-color: #284AC2;
 @media (max-width: 650px) {
     .aside {
         height: fit-content !important;
-        width: 100%;
+        width: 100% !important;
         top: auto;
         bottom: 0;
         right: 0 !important;
@@ -94,6 +101,10 @@ $blue-color: #284AC2;
             color: #959595;
             gap: 4px;
             font-size: 14px;
+
+            span {
+                display: block !important;
+            }
         }   
 
         img {

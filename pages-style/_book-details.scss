@@ -282,7 +282,23 @@ $blue-color: #284AC2;
                         }
 
                         .connect {
-                           display: none;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px; 
+
+                            a {
+                                background: #284AC2;
+                                color: white;
+                                padding: 1px 10px;
+                                font-size: 10px;
+                                border-radius: 6px;
+
+                                &:last-child {
+                                    color: #284AC2;
+                                    background-color: white;
+                                    border: 1px solid #284AC2;
+                                }
+                            }
                         }
                     }
                    
@@ -314,6 +330,10 @@ $blue-color: #284AC2;
                             cursor: pointer;
                         }
 
+                    }
+
+                    .more {
+                        margin-top: 8px;
                     }
                 }
             }

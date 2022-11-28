@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1047,7 +1047,25 @@ hr {
   margin: 0;
 }
 .content-book-details .interaction .comments .comment-user .info-cooment .head-info .connect {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.content-book-details .interaction .comments .comment-user .info-cooment .head-info .connect a {
+  background: #284AC2;
+  color: white;
+  padding: 1px 10px;
+  font-size: 10px;
+  border-radius: 6px;
+}
+.content-book-details .interaction .comments .comment-user .info-cooment .head-info .connect a:last-child {
+  color: #284AC2;
+  background-color: white;
+  border: 1px solid #284AC2;
 }
 .content-book-details .interaction .comments .comment-user .info-cooment p {
   margin: 0;
@@ -1079,6 +1097,9 @@ hr {
 }
 .content-book-details .interaction .comments .comment-user .info-cooment .like > span {
   cursor: pointer;
+}
+.content-book-details .interaction .comments .comment-user .info-cooment .more {
+  margin-top: 8px;
 }
 .content-book-details .interaction::-webkit-scrollbar {
   width: 10px;
@@ -1711,9 +1732,6 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1733,13 +1751,12 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  gap: 15px;
+  margin-top: 10px;
 }
 .contnet-bookmark .content-container .box-mark .box .info .head .mark img {
   width: 16px;
+  height: 22px;
 }
 .contnet-bookmark .content-container .box-mark .box .info .desc p {
   font-size: 15px;
@@ -1954,6 +1971,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 .head-upload .title-page {
   margin: 0;
@@ -2063,7 +2081,7 @@ hr {
 .page-upload .content-page .btn-next {
   display: block;
   margin: auto;
-  width: 100%;
+  width: 250px;
   background-color: blue;
   color: #FFF;
   text-align: center;
@@ -2080,6 +2098,9 @@ hr {
     height: 230px;
     background-color: #284AC2;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .head-upload .title-page {
     display: none;
@@ -2183,7 +2204,7 @@ hr {
 /* Start Page Upload 2 */
 .page-upload-2 {
   background-color: #F8F8F8;
-  padding: 30px 0 100px 0;
+  padding: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2197,10 +2218,10 @@ hr {
 .page-upload-2 .content-page-2 {
   background-color: #FFF;
   width: 50%;
-  padding: 25px;
+  padding: 20px;
   border: 1px solid #CCC;
   border-radius: 8px;
-  margin: 70px 110px 0 0;
+  margin: 70px 0 0 0;
 }
 .page-upload-2 .content-page-2 .head {
   text-align: center;
@@ -2209,8 +2230,9 @@ hr {
   margin-bottom: 0;
 }
 .page-upload-2 .content-page-2 .head p {
-  margin-top: 10px;
-  color: #171717;
+  margin-top: -5px;
+  color: gray;
+  font-size: 15px;
 }
 .page-upload-2 .content-page-2 .form {
   display: -webkit-box;
@@ -2222,13 +2244,13 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .page-upload-2 .content-page-2 .form form {
   width: 60%;
 }
 .page-upload-2 .content-page-2 .form form .input-text {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .page-upload-2 .content-page-2 .form form .input-text label {
   margin-bottom: 10px;
@@ -2242,7 +2264,7 @@ hr {
   font-size: 17px;
 }
 .page-upload-2 .content-page-2 .form form .textarea {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .page-upload-2 .content-page-2 .form form .textarea label {
   margin-bottom: 10px;
@@ -2273,14 +2295,15 @@ hr {
 .page-upload-2 .content-page-2 .form form .upload label {
   border: 2px dashed #ABABAB;
   width: 100%;
-  padding: 30px 20px;
+  padding: 20px;
   cursor: pointer;
 }
 .page-upload-2 .content-page-2 .form form .upload label p {
   margin-bottom: 0;
+  font-size: 14px;
 }
 .page-upload-2 .content-page-2 .form form .check {
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 .page-upload-2 .content-page-2 .form form .check input, .page-upload-2 .content-page-2 .form form .check label {
   cursor: pointer;
@@ -2300,7 +2323,7 @@ hr {
 .page-upload-2 .content-page-2 .form form .button a {
   width: 50%;
   text-align: center;
-  padding: 8px;
+  padding: 5px;
   border-radius: 5px;
 }
 .page-upload-2 .content-page-2 .form form .button a:first-of-type {
@@ -2352,6 +2375,7 @@ hr {
   .page-upload-2 {
     background-color: #FFF;
     overflow: hidden;
+    padding: 10px 0 100px 0;
   }
   .page-upload-2 .content-page-2 {
     width: 100% !important;
@@ -2508,6 +2532,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 .head-upload-3 .title-page {
   margin: 0;
@@ -2519,26 +2544,31 @@ hr {
 /* Start Page Upload 2 */
 .page-upload-3 {
   background-color: #F8F8F8;
-  padding: 30px 0 100px 0;
+  padding: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .page-upload-3 .content-page-3 {
   background-color: #FFF;
   width: 50%;
-  padding: 25px 25px 50px 25px;
+  padding: 10px;
   border: 1px solid #CCC;
   border-radius: 8px;
-  margin: auto;
+  margin: 60px 0 10px 0;
 }
 .page-upload-3 .content-page-3 .head {
   text-align: center;
-  margin-bottom: 80px;
 }
 .page-upload-3 .content-page-3 .head h2 {
   margin-bottom: 0;
-}
-.page-upload-3 .content-page-3 .head p {
-  margin-top: 10px;
-  color: #171717;
+  font-size: 22px;
 }
 .page-upload-3 .content-page-3 .form {
   display: -webkit-box;
@@ -2550,16 +2580,16 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .page-upload-3 .content-page-3 .form form {
   width: 60%;
 }
 .page-upload-3 .content-page-3 .form form .input-text {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .page-upload-3 .content-page-3 .form form .input-text label {
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2569,6 +2599,9 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.page-upload-3 .content-page-3 .form form .input-text label span {
+  font-size: 15px;
 }
 .page-upload-3 .content-page-3 .form form .input-text label .btn-text {
   display: -webkit-box;
@@ -2579,19 +2612,22 @@ hr {
           align-items: center;
   cursor: pointer;
 }
+.page-upload-3 .content-page-3 .form form .input-text label .btn-text img {
+  width: 24px;
+}
 .page-upload-3 .content-page-3 .form form .input-text input {
   width: 100%;
-  padding: 12px 15px;
+  padding: 7px 15px;
   border: 1px solid #ABABAB;
   border-radius: 10px;
   font-size: 17px;
   color: #ABABAB;
 }
 .page-upload-3 .content-page-3 .form form .textarea {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .page-upload-3 .content-page-3 .form form .textarea label {
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2602,6 +2638,9 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
+.page-upload-3 .content-page-3 .form form .textarea label span {
+  font-size: 15px;
+}
 .page-upload-3 .content-page-3 .form form .textarea label .btn-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2611,10 +2650,13 @@ hr {
           align-items: center;
   cursor: pointer;
 }
+.page-upload-3 .content-page-3 .form form .textarea label .btn-text img {
+  width: 24px;
+}
 .page-upload-3 .content-page-3 .form form .textarea textarea {
   width: 100%;
-  height: 150px;
-  padding: 10px 15px;
+  height: 120px;
+  padding: 7px 15px;
   resize: none;
   border: 1px solid #ABABAB;
   border-radius: 10px;
@@ -2624,8 +2666,8 @@ hr {
 .page-upload-3 .content-page-3 .book-slider {
   width: 60%;
   margin: auto;
-  padding: 20px;
-  margin-bottom: 60px;
+  padding: 10px 20px;
+  margin-bottom: 7px;
   text-align: center;
 }
 .page-upload-3 .content-page-3 .book-slider img {
@@ -2633,6 +2675,7 @@ hr {
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 230px;
 }
 .page-upload-3 .content-page-3 .btn-upload {
   width: 60%;
@@ -2651,7 +2694,8 @@ hr {
 .page-upload-3 .content-page-3 .btn-upload a {
   width: 50%;
   text-align: center;
-  padding: 8px;
+  padding: 5px;
+  font-size: 15px;
   border-radius: 10px;
 }
 .page-upload-3 .content-page-3 .btn-upload a:first-of-type {
@@ -2670,6 +2714,7 @@ hr {
 @media (max-width: 1200px) {
   .page-upload-3 .content-page-3 {
     width: 70% !important;
+    margin-right: 110px;
   }
 }
 @media (max-width: 650px) {
@@ -2677,6 +2722,9 @@ hr {
     height: 170px;
     background-color: #284AC2;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .head-upload-3 .title-page {
     display: none;
@@ -2700,12 +2748,13 @@ hr {
   .page-upload-3 {
     background-color: #FFF;
     overflow: hidden;
-    padding: 0;
+    padding: 0 0 100px;
   }
   .page-upload-3 .content-page-3 {
     width: 100% !important;
     border: none;
     background-color: transparent;
+    margin: 0;
   }
   .page-upload-3 .content-page-3 .head {
     display: none;
@@ -3850,8 +3899,8 @@ hr {
   transition: all 0.3s ease;
 }
 .content-chats .chats-friends {
-  width: 30%;
-  padding: 20px;
+  width: 32%;
+  padding: 15px;
   border-left: 1px solid #CCC;
   overflow: auto;
 }
@@ -3862,10 +3911,11 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 0;
 }
 .content-chats .chats-friends .head .name-head h2 {
   margin: 0;
+  font-size: 23px;
 }
 .content-chats .chats-friends .head .name-head a {
   display: none;
@@ -3883,7 +3933,7 @@ hr {
   display: none;
 }
 .content-chats .chats-friends .search {
-  padding: 10px 0;
+  padding: 5px 0;
   position: relative;
 }
 .content-chats .chats-friends .search input {
@@ -3903,7 +3953,7 @@ hr {
   width: 17px !important;
 }
 .content-chats .chats-friends .all-chats {
-  padding: 25px 0 0 0;
+  padding: 20px 0 0 0;
 }
 .content-chats .chats-friends .all-chats .box-chat {
   display: -webkit-box;
@@ -3913,9 +3963,8 @@ hr {
   color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 7px;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .content-chats .chats-friends .all-chats .box-chat:hover {
   background-color: #E9E9E9;
@@ -3943,6 +3992,8 @@ hr {
   margin: 0;
   font-size: 15px;
   color: grey;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 .content-chats .chats-friends .all-chats .box-chat .info .notification {
   display: -webkit-box;
@@ -3973,6 +4024,10 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.content-chats .chats-friends .all-chats .box-chat .info .notification .time {
+  font-size: 14px !important;
+  color: #A9A9B0;
+}
 .content-chats .type-chat {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -3996,28 +4051,32 @@ hr {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  padding: 15px 15px 0 15px;
+  padding: 12px 0 0 0;
 }
 .content-chats .type-chat .head .person img {
-  width: 65px;
+  width: 60px;
   border-radius: 50%;
 }
 .content-chats .type-chat .head .person .info p {
   margin: 0;
+  font-weight: 600;
 }
 .content-chats .type-chat .head .person .info span {
   color: grey;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  display: block;
 }
 .content-chats .type-chat .head .back {
   cursor: pointer;
 }
 .content-chats .type-chat .head .back svg {
-  width: 25px;
+  width: 23px;
 }
 .content-chats .type-chat .chat-content {
   padding: 15px;
   overflow: auto;
-  height: 620px;
+  height: 640px;
 }
 .content-chats .type-chat .chat-content .right {
   display: -webkit-box;
@@ -4035,7 +4094,7 @@ hr {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px;
+  padding: 8px;
   border-radius: 15px 15px 0 15px;
 }
 .content-chats .type-chat .chat-content .right .date {
@@ -4067,7 +4126,7 @@ hr {
 .content-chats .type-chat .chat-content .left p {
   background-color: #284AC2;
   color: #FFF;
-  padding: 10px;
+  padding: 8px;
   border-radius: 15px 15px 15px 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -4100,7 +4159,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 15px;
+  padding: 20px 15px;
   gap: 20px;
 }
 .content-chats .type-chat .input-chat .input {
@@ -4111,9 +4170,11 @@ hr {
 }
 .content-chats .type-chat .input-chat .input input {
   width: 100%;
-  padding: 20px;
+  padding: 18px;
+  font-size: 17px;
+  font-weight: 600;
   border: none;
-  background-color: #F7F7FB;
+  background-color: #f2f2fe;
   border-radius: 20px;
 }
 .content-chats .type-chat .input-chat .input img {
@@ -4122,6 +4183,7 @@ hr {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 20px;
+  width: 25px;
   cursor: pointer;
 }
 .content-chats .type-chat .input-chat .input-search img {

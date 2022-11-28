@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 
     .title-page {
         margin: 0;
@@ -114,7 +115,7 @@
         .btn-next {
             display: block;
             margin: auto;
-            width: 100%;
+            width: 250px;
             background-color: blue;
             color: #FFF;
             text-align: center;
@@ -133,6 +134,7 @@
         height: 230px;
         background-color: #284AC2;
         padding: 20px;
+        display: flex;
 
         .title-page {
             display: none;
