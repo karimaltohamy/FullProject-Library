@@ -1,3 +1,4 @@
+// toogle chat
 let boxsChat = document.querySelectorAll(".box-chat");
 let chatsFriends = document.querySelector(".chats-friends");
 let typeChat = document.querySelector(".type-chat");
@@ -20,3 +21,5 @@ back.addEventListener("click", () => {
   chatsFriends.classList.remove("close-chat");
   typeChat.classList.remove("open-chat");
 });
+
+// toggle chat
