@@ -745,7 +745,7 @@ hr {
 .content-book-details {
   overflow: hidden;
   margin: 70px 120px 0 0;
-  padding: 0 10px 0 0;
+  padding: 0px 50px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1697,7 +1697,7 @@ hr {
 /* Start Content Bookmark page */
 .contnet-bookmark {
   overflow: hidden;
-  margin: 85px 120px 0 0;
+  margin: 70px 120px 0 0;
   padding: 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
