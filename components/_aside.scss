@@ -38,6 +38,44 @@ $blue-color: #284AC2;
         gap: 5px;
         font-size: 14px;
 
+        .item {
+            background-image: url(../images/spritesheet.png);
+            background-repeat: no-repeat;
+            display: block;
+            height: 26px;
+            width: 36px;
+        }
+        .home {
+            background-position: -5px -74px;
+        }
+        .home-active {
+            background-position: -38px -5px;
+        }
+
+        .icon-bookmark {
+            background-position: 5px -38px;
+        }
+
+        .icon-bookmark-active {
+            background-position: -74px -2px;
+        }
+
+        .icon-chats {
+            background-position: -23px -39px;
+        }
+
+        .icon-chats-active {
+            background-position: 3px -4px;
+        }
+
+        .icon-authors {
+            background-position: -56px -39px;
+        }
+
+        .icon-authors-active {
+            background-position: -43px -70px
+        }
+
         img {
             height: 22px;
         }
