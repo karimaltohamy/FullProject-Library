@@ -621,7 +621,9 @@ hr {
         color: #FFF;
 
         .logo-page {
-            width: 130px;
+            width: 105px;
+            height: 74px;
+            object-fit: contain;
         }
 
         .upload {
@@ -711,6 +713,7 @@ hr {
 
                     img {
                         height: 10px;
+                        width: 50px;
                     }
                 }
 
@@ -719,7 +722,8 @@ hr {
                     top: 10px !important;
 
                     img {
-                        width: 33px;
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
