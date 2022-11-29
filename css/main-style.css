@@ -1569,8 +1569,8 @@ hr {
     display: none;
   }
   .content-book-details {
-    margin: 0;
-    margin-top: -170px;
+    margin: 0 !important;
+    margin-top: -170px !important;
   }
   .content-book-details .main-box-details {
     width: 100% !important;
@@ -4548,7 +4548,7 @@ hr {
 .content-chats .type-chat .input-chat .input input {
   width: 100%;
   padding: 18px;
-  font-size: 17px;
+  font-size: 17px !important;
   font-weight: 600;
   border: none;
   background-color: #f2f2fe;
@@ -4731,10 +4731,12 @@ hr {
     padding: 5px 15px !important;
   }
   .type-chat .input-chat .input input {
-    padding: 20px 15px !important;
+    padding: 14px 10px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
   }
   .type-chat .input-chat .input img {
-    width: 22px;
+    width: 18px !important;
   }
   .type-chat .input-chat .input-search img {
     width: 34px !important;
@@ -5100,5 +5102,5 @@ hr {
   }
 }
 .active-margin {
-  margin: 70px 85px 0 0 !important;
+  margin: 70px 85px 0 0;
 }

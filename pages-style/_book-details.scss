@@ -437,8 +437,8 @@ $blue-color: #284AC2;
     }
 
     .content-book-details {
-        margin: 0;
-        margin-top: -170px;
+        margin: 0 !important;
+        margin-top: -170px !important;
 
         .main-box-details {
             width: 100% !important;

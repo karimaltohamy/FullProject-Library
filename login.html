@@ -14,7 +14,7 @@
 
     <div class="head-page">
         <div class="name-site">
-              <img class="icon-list-web" src="images/icon open-menu.png" alt="menu-icon">
+            <img class="icon-list-web" src="images/icon open-menu.png" alt="menu-icon">
             <a href="index.html">
                 <img src="images/Logo_web.png" alt="logo">
             </a>
@@ -36,12 +36,12 @@
                 <div class="choose">
                     <a href="#">
                         <img src="images/lang-ar.png" alt="icon">
-                        <span>AR</span>
+                        <span>Arabic</span>
                     </a>
 
                     <a href="#">
                         <img src="images/lang-en.png" alt="icon">
-                        <span>EN</span>
+                        <span>English</span>
                     </a>
                 </div>
             </div>
@@ -193,5 +193,14 @@
    </div>
 
    <script src="js/toggle.js"></script>
+   <script>
+    document.querySelector(".click-lang").onclick = () => {
+        document.querySelector(".choose").classList.toggle("open-lang")
+    }
+
+    // document.querySelector(".img-user").onclick = () => {
+    //     document.querySelector(".drop-menu").classList.toggle("open-menu")
+    // }
+</script>
 </body>
 </html>
