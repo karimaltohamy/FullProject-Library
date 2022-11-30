@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>تفاصيل الكتاب</title>
         <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Cairo:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Tajawal:wght@300&display=swap" rel="stylesheet">
@@ -73,6 +74,7 @@
             <a href="chats.html">
                 <div class="item icon-chats" ></div>
                 <span>المحادثات</span>
+                <span class="massage">1</span>
             </a>
 
             <a href="authors.html" class="authors">
@@ -264,7 +266,8 @@
     
                         <div class="button-book">
                             <a href="#">قراءة</a>
-                            <a href="#">تنزيل</a>
+                            <a class="download" href="#">تنزيل</a>
+                            <a class="share" href="#">مشاركه</a>
                         </div>
                     </div>
                 </div>
@@ -429,9 +432,9 @@
                 <h2>عن المؤلف</h2>
 
                 <div class="author">
-                    <div class="img">
-                        <img src="images/ellipse 1.png" alt="img">
-                    </div>
+                    <a href="author-profile.html" class="img">
+                        <img src="images/ellipse 582.png" alt="img">
+                    </a>
 
                     <div class="info">
                         <h3>J. K. Rowling</h3>
@@ -439,7 +442,7 @@
                             <img src="images/Stars.png" alt="img">
                             <span>(4.9)</span>
                         </div>
-                        <a href="author-profile.html">تواصل معى</a>
+                        <a class="contact-btn" href="author-profile.html">تواصل معى</a>
                     </div>
                 </div>
 
@@ -722,6 +725,50 @@
                     </div>
                 </div>
             </div>
+
+            <!-- start share links -->
+            <div class="share-links">
+                <div class="content">
+                    <a href="#" class="item">
+                        <i class="fa-solid fa-copy copy"></i>
+                        <span>نسخ الرابط</span>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-whatsapp whatsapp"></i>
+                        <span> نشر علي الواتس اب</span>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-facebook-f facebook"></i>
+                        <span>نشر علي فيسبوك</span>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-twitter twitter"></i>
+                        <span>نشر علي تويتر</span>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-telegram  telegram"></i>
+                        <span>نشر علي تليجرام</span>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-linkedin-in linkedin"></i>
+                        <span>نشر علي لينكد ان</span>
+                    </a>
+                    <a href="#" class="item close-share">
+                        <i class="fa-solid fa-xmark close-mark"></i>
+                        <span>اغلاق</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end share links -->
+
+            <!-- start popup download book -->
+            <div class="download-book">
+                <div class="content">
+                    <h4>جاري تجهيز الكتاب</h4>
+                    <div class="progress-download"></div>
+                </div>
+            </div>
+            <!-- end popup download book -->
         </div>
         <!-- End Content Book Details -->
         <script src="js/jquery.js"></script>
@@ -732,6 +779,34 @@
             document.querySelector(".click-lang").onclick = () => {
                 document.querySelector(".choose").classList.toggle("open-lang")
             }
+
+            // start popup share links
+            let shareBtn = document.querySelector(".share")
+            let shareLinks = document.querySelector(".share-links")
+            let closeShare = document.querySelector(".close-share")
+
+            shareBtn.addEventListener("click", () => {
+                shareLinks.classList.add("active-share")
+            })
+
+            closeShare.addEventListener("click", () => {
+                shareLinks.classList.remove("active-share")
+            })
+            // end popup share links
+
+            // start download-book
+            let downloadBtn = document.querySelector(".download")
+            let downloadBook = document.querySelector(".download-book")
+
+            downloadBtn.addEventListener("click", (e) => {
+                e.preventDefault()
+                downloadBook.classList.add("active-download")
+
+                setTimeout(() => {
+                    downloadBook.classList.remove("active-download")
+                }, 8000)
+            })
+            // end download-book
         </script>
     </body>
 </html>
