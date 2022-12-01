@@ -764,11 +764,37 @@
             <!-- start popup download book -->
             <div class="download-book">
                 <div class="content">
+                    <i class="fa-solid fa-xmark close-download-book"></i>
                     <h4>جاري تجهيز الكتاب</h4>
                     <div class="progress-download"></div>
                 </div>
             </div>
             <!-- end popup download book -->
+
+            <!-- start popup download link -->
+            <div class="download-link">
+                <div class="content">
+                    <i class="fa-solid fa-xmark close-popup-link"></i>
+
+                    <div class="numbers">
+                        <p>324,831 <span>كتاب بالمكتبه حتي الأن</span></p>
+                        <p>126,384 <span>مؤلف بالمكتبه حتي الأن</span></p>
+                    </div>
+                    <div class="book-link">
+                        <a href="#">رابط التحميل (pdf)</a>
+                    </div>
+                    <div class="links">
+                        <a href="upload.html">انشر كتاب</a>
+                    </div>
+                    <div class="panel">
+                        <img src="images/img-heart.jpg" alt="">
+                        <h3>يا لها من مكتبة عظيمة النفع ونتمنى استمرارها</h3>
+                        <p>أدعمنا بالتبرع بمبلغ بسيط لنتمكن من تغطية التكاليف والاستمرار</p>
+                        <a>تبرع لنا</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end popup download link -->
         </div>
         <!-- End Content Book Details -->
         <script src="js/jquery.js"></script>
@@ -791,12 +817,14 @@
 
             closeShare.addEventListener("click", () => {
                 shareLinks.classList.remove("active-share")
-            })
+            }) 
             // end popup share links
 
             // start download-book
             let downloadBtn = document.querySelector(".download")
             let downloadBook = document.querySelector(".download-book")
+            let downloadLink = document.querySelector(".download-link")
+            let closeDownloadBook = document.querySelector(".close-download-book")
 
             downloadBtn.addEventListener("click", (e) => {
                 e.preventDefault()
@@ -804,9 +832,26 @@
 
                 setTimeout(() => {
                     downloadBook.classList.remove("active-download")
-                }, 8000)
+                    if (!downloadLink.classList.contains("end-download")) {
+                        downloadLink.classList.add("active-download-link")
+                    }
+                    
+                }, 10000)
+            })
+
+            closeDownloadBook.addEventListener("click", () => {
+                downloadBook.classList.remove("active-download")
+                downloadLink.classList.add("end-download")
             })
             // end download-book
+
+            // start popup download link
+            let closeDownloadLink = document.querySelector(".close-popup-link")
+
+            closeDownloadLink.addEventListener("click", () => {
+                downloadLink.classList.remove("active-download-link")
+            })
+            // end popup download link
         </script>
     </body>
 </html>
