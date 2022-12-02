@@ -48,8 +48,13 @@ closeDownloadLink.addEventListener("click", () => {
 let evaluationBtn = document.querySelector(".evaluation");
 let evaluationBox = document.querySelector(".evaluation-box");
 let closeEvaluation = document.querySelector(".close-evaluation");
+let btnBoxClickApp = document.querySelector(".rate-this-book");
 
 evaluationBtn.addEventListener("click", () => {
+  evaluationBox.classList.add("active-evaluation-box");
+});
+
+btnBoxClickApp.addEventListener("click", () => {
   evaluationBox.classList.add("active-evaluation-box");
 });
 
@@ -64,7 +69,6 @@ let commentEvaluation = document.querySelector(".comment-evaluition");
 let closeCommentEvaluation = document.querySelector(
   ".close-comment-evaluation"
 );
-
 let btnCloseComment = document.querySelector(".btn-close-comment");
 
 evaluationLineBtns.forEach((btn) => {

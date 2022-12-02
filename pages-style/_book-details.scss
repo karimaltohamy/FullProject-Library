@@ -25,21 +25,20 @@ $blue-color: #284AC2;
             margin-top: 25px;
             padding: 20px 0 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
             gap: 15px;
             justify-content: center;
             padding: 10px;
 
             .card-book-author {
-                padding: 25px 20px;
-                box-shadow: 0 0 10px 0 #b6b6b6a9;
-                border-radius: 20px;
+                box-shadow: 0 0 10px 0 rgb(182 182 182 / 66%);
                 display: block;
-                color: $text-color;
-                min-height: 430px;
-                padding: 20px 10px ;
+                color: #000;
+                min-height: 365px;
+                padding:30px 20px 10px;
                 text-align: center;
                 position: relative;
+                border-radius: 15px;
         
                 .img-book {
                     display: flex;
@@ -48,20 +47,21 @@ $blue-color: #284AC2;
                     position: relative;
     
                     img:first-of-type {
-                        width: 200px ;
+                        width: 220px ;
                         height: 260px ;
                     }
                 }
         
                 p {
-                    margin-top: 15px;
+                    margin-top: 5px;
+                    margin-bottom: 0;
                     font-size: 17px;
-                    font-weight: 500;
+                    font-weight: 600;
                     text-align: center;
                 }
         
                 >div {
-                    margin-top: 5px;
+                    margin-top: -12px;
     
                     span {
                         font-size: 15px;
@@ -111,6 +111,35 @@ $blue-color: #284AC2;
                     span {
                         color: #D60505;
                         font-weight: 600;
+                    }
+                }
+
+                .favorite {
+                    display: flex;
+                    padding: 6px 15px;
+                    border-radius: 8px;
+                    background-color: #ececec;
+                    cursor: pointer;
+
+                    svg {
+                        width: 25px;
+
+                        &.active-favorite {
+                            display: block;
+                        }
+
+                        &.remove-favorite {
+                            display: none;
+                        }
+                    }
+
+                    .outline-favorite {
+                        color: #686868;
+                    }
+
+                    .solid-favorite {
+                        color: #D60505;
+                        display: none;
                     }
                 }
             }
@@ -1029,6 +1058,7 @@ $blue-color: #284AC2;
             .details {
                 .head {
                     justify-content: center;
+                    gap: 5px;
 
                     h2 {
                         font-size: 15px;
@@ -1036,6 +1066,14 @@ $blue-color: #284AC2;
 
                     .hart {
                         display: none !important;
+                    }
+
+                    .favorite {
+                        padding: 3px 9px !important;
+
+                        svg {
+                            width: 18px !important;
+                        }
                     }
                 }
             }
@@ -1122,8 +1160,16 @@ $blue-color: #284AC2;
                 gap: 10px !important;  
 
                 a {
-                    padding: 2px 25px !important;
-                    font-size: 14px !important;
+                    padding: 2px 20px !important;
+                    font-size: 12px !important;
+
+                    svg {
+                        width: 15px !important;
+                    }
+                }
+
+                .evaluation {
+                    display: none !important;
                 }
             }
         }
