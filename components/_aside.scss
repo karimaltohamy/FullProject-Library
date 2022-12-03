@@ -170,6 +170,7 @@ $blue-color: #284AC2;
             .massage {
                 top: 0 !important;
                 right: 0 !important;
+                display: flex !important;
             }
         }   
 
@@ -177,6 +178,7 @@ $blue-color: #284AC2;
 
         span {
             font-size: 10px;
+            display: block !important;
         }
     }
 }
