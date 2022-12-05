@@ -225,7 +225,7 @@
     .page-upload-3 {
         background-color: #FFF;
         overflow: hidden;
-        padding: 0 0 100px;
+        padding: 0;
 
         .content-page-3 {
             width: 100% !important;
@@ -238,6 +238,7 @@
             }
 
             .form {
+                padding: 0 !important;
                 margin-top: 20px;
 
                 form {
@@ -271,7 +272,7 @@
     }
 
     .content-page-3 {
-        padding: 0px 25px 35px 25px !important;
+        padding: 0px 10px 35px !important;
 
         .form {
             .input-text {
